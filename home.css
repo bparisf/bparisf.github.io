@@ -7,6 +7,8 @@ body {
 
 p {
 	font-size: 18px;
+	margin-top: 18px;
+	margin-bottom: 18px;
 }
 
 h1 {
@@ -14,18 +16,37 @@ h1 {
 	margin: 0%;
 }
 
+h5 {
+	font-size: 18px;
+	margin: 0%;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	display: inline-block;
+}
+
+li.active {
+	color: white;
+	background-color: limegreen;
+}
+
+
 .column {
   float: left;
 }
 
 .left {
-  width: 20%;
-  margin-right: 5%;
+  width: 15%;
+  /*margin-right: 5%;*/
+  position: fixed;
 }
 
 .right {
   width: 75%;
   padding-bottom: 10rem;
+  margin-left: 25%;
 }
 
 .imager {
@@ -35,7 +56,9 @@ h1 {
 
 .imager div {
   flex: 1;
-  margin-right: 3px;
+  margin: 0px;
+  margin-right: 4px;
+
 }
 
 .imager div img {
@@ -57,5 +80,16 @@ footer {
 	}
 	.column {
 		width: 100%;
+	}
+	.left {
+		position: static;
+	}
+	.right {
+		margin-left: 0;
+	}
+	ul {
+		position: fixed;
+		bottom: 0;
+		background-color: white;
 	}
 }
