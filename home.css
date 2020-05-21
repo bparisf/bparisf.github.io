@@ -15,7 +15,7 @@ footer {
 	position: absolute;
 }
 .header {
-  height: 250px;
+  height: 200px;
   background: #ff7e00;
   position: fixed;
   width: 100%;
@@ -33,20 +33,20 @@ footer {
 	color: #636363;
 }
 .logo {
-	margin-top: 50px;
+	margin-top: 25px;
 	position:fixed;
 }
 .left {
 	font-family: 'Fredoka One', cursive;
 	font-size: 22px;
 	width: 150px;
- 	margin-top: 300px;
+ 	margin-top: 250px;
   	position: fixed;
   	text-align: right;
 }
 
 .right {
-  	padding-top: 300px;
+  	padding-top: 250px;
   	margin-left: 200px;
   	padding-bottom: 60px;
   	color: #292929;
@@ -70,30 +70,20 @@ a {
 a:hover {
 	color: #636363;
 }
-.imager {
-  display: flex;
-  float: left;
+#screens {
+  padding: 0;
+  margin: 20px 0px 0px;
+  text-align: center;
 }
-.imager div {
-  flex: 1;
-  margin: 0px;
-  margin-right: 4px;
-
-}
-.imager div img {
-  width: auto;
-  max-width: 100%;
-}
-.screens {
-	margin-top: 10px;
-}
-#sc {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+#screens img {
+	margin: 10px 5px 5px;
+	vertical-align: middle;
+	outline: solid;
+	outline-width: 1px;
+	outline-color: #636363;
 }
 #game {
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 h1 {
 	font-weight: 600;
