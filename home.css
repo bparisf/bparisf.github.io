@@ -11,9 +11,6 @@ footer {
 	margin-bottom: 20px;
 	color: lightgrey;
 }
-#footer {
-	position: absolute;
-}
 .header {
   height: 200px;
   background: #ff7e00;
