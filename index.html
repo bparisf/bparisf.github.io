@@ -26,7 +26,6 @@
     <meta property="og:url" content="http://parisfleming.com/"/>
     <meta property="og:title" content="Paris Fleming"/>
     <meta property="og:description" content="Come check out my games and other projects!"/>
-    <!-- <script src="game.js"></script> -->
 </head>
 <body>
 	<div id="columns">
@@ -39,6 +38,24 @@
 			<p><a href="https://twitter.com/yomiparis">twitter</a></p>
 			<p><a href="https://yomiparis.itch.io/">itch.io</a></p>
 			<p><a href="https://yomiparis.bandcamp.com/">bandcamp</a></p>
+			<br>
+			<button id="toggle">Light | Dark</button>
+			<script>
+				const root = document.documentElement;
+				const toggle = document.getElementById("toggle");
+				const darkMode = localStorage.getItem("dark-mode");
+				if (darkMode) {
+				  root.classList.add("dark-theme");
+				}
+				toggle.addEventListener("click", () => {
+				  root.classList.toggle("dark-theme");
+				  if (root.classList.contains("dark-theme")) {
+				    localStorage.setItem("dark-mode", true);
+				  } else {
+				    localStorage.removeItem("dark-mode");
+				  }
+				});
+			</script>
 			<br>
 		</div>
 		<div class="right">
