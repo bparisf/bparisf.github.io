@@ -1,18 +1,22 @@
-/*Light Theme*/
+/*Variables for light theme*/
 :root {
-  --bg-color: white; 								/* Background color */
-  --text-color: DimGray;						/* Text color */
-  --header-color: #01263a;					/* Header color */
-  --header-shadow: LightSteelBlue;	/* Header shadow color */
-}
-/*Dark Theme*/
-.dark-theme {							
-  --bg-color: #1c1d1f; 							/* Background color */
-  --text-color: #f0f0f1; 						/* Text color */
-  --header-color: #71a7d9;					/* Header color */
-  --header-shadow: #0a4b78;					/* Header shadow color */
+  --bg-color: white; 				/*Background color */
+  --text-color: DimGray;			/*Text color */
+  --header-color: #01263a;			/*Header color */
+  --header-shadow: LightSteelBlue;	/*Header shadow color */
+  --button-bg-color: LightGray;		/*Button background color*/
 }
 
+/*Variables for dark theme*/
+.dark-theme {							
+  --bg-color: #1c1d1f; 				/*Background color */
+  --text-color: #f0f0f1; 			/*Text color */
+  --header-color: #71a7d9;			/*Header color */
+  --header-shadow: #0a4b78;			/*Header shadow color */
+  --button-bg-color: DimGray;		/*Button background color*/
+}
+
+/*Primary styling*/
 body {
 	margin: 0px 0px 0px;
 	background-color: var(--bg-color);
@@ -21,7 +25,6 @@ footer {
 	bottom: 0px;
 	margin-left: 300px;
 	margin-bottom: 20px;
-	
 }
 small {
 	font-family: 'Noto Sans JP', sans-serif;
@@ -50,7 +53,15 @@ a {
 a:hover {
 	color: LightSteelBlue;
 }
-
+ul {
+	margin: 0px;
+	list-style-position: outside;
+	padding-left: 25px;
+}
+li {
+	color: var(--text-color);
+	padding-bottom: 5px;
+}
 #columns {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -70,7 +81,7 @@ a:hover {
   	padding-bottom: 60px;
 }
 .projects {
-/*	padding-bottom: 50px;*/
+	padding-bottom: 25px;
 }
 .projects_desc {
 	text-align: left;
@@ -78,26 +89,45 @@ a:hover {
 .entries {
 	padding-bottom: 50px;
 }
+.entries_title {
+	font-weight: 600;
+}
+.entries_section {
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+.entries_section_title {
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+
+/*Styling for images without and with an outline*/
 .entries_img {
 	float: left;
 	max-height: 100px;
 	margin-right: 10px;
 }
-.entries_title {
-	font-weight: 600;
+.entries_img_outlined {
+	float: left;
+	max-height: 100px;
+	margin-right: 10px;
+	border: 1px solid DimGray;
 }
 
-/*Toggle Button*/
-#toggle {
+/*Styling for the toggle button*/
+button {
   padding: 6px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  background-color: var(--button-bg-color);
 }
-#toggle:hover {
+button:hover {
   background-color: gray;
+  background-color: #ff7e00;
 }
 
+/*Styling for vertical layout*/
 @media only screen and (max-width: 1000px) {
 	footer {
 		position: relative;
